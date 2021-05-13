@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <BackgroundCheck userId="{{userId}}" password="{{password}}">
-    <BackgroundSearchPackage action='submit' type='1 General'>
+    <BackgroundSearchPackage action='submit' type='1 HOURLY'>
         <ReferenceId>123ABC</ReferenceId>
         <PersonalData>
             <PersonName>
@@ -30,9 +30,6 @@
             <Screening type='personsearch'>
                 <Vendor>OMNI_ROUTING</Vendor>
             </Screening>
-            <Screening type='ssn'>
-                <Vendor type='idsearchplus' high_risk_fraud_alert='yes'>transunion</Vendor>
-            </Screening>0x
             <AdditionalItems type='x:integration_type'>
                 <Text>Integrating Platform Company Name</Text>
             </AdditionalItems>
