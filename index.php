@@ -4,6 +4,7 @@ require('vendor/autoload.php');
 
 // Get XML to process
 $fileName = $argv[1];
+$orderId = $argv[2] ?: '';
 if (empty($fileName) || !file_exists($fileName)) {
     echo "Please provide an existent sample file name";
     exit(1);
@@ -20,6 +21,8 @@ $url = $_ENV['TAZ_URL'];
 $xml = file_get_contents($fileName);
 $xml = str_replace('{{userId}}', $userId, $xml);
 $xml = str_replace('{{password}}', $password, $xml);
+
+$xml = str_replace('{{orderId}}', $orderId, $xml);
 
 // Send XML to TAZ
 $client = new \GuzzleHttp\Client([

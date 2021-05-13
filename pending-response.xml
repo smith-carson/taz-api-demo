@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<BackgroundReports userId="" password="" databaseset="">
+    <BackgroundReportPackage>
+        <ReferenceId><![CDATA[123ABC]]></ReferenceId>
+        <OrderId>118004</OrderId>
+        <ScreeningStatus>
+            <OrderStatus>x:pending</OrderStatus>
+        </ScreeningStatus>
+    </BackgroundReportPackage>
+</BackgroundReports>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<BackgroundCheck userId="{{userId}}" password="{{password}}">
+    <BackgroundSearchPackage action="status">
+        <OrderId>{{orderId}}</OrderId>
+    </BackgroundSearchPackage>
+</BackgroundCheck>
