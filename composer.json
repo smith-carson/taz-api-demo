@@ -1,0 +1,20 @@
+{
+    "name": "smithcarson/taz-api-demo",
+    "description": "Demo to test XML api from TAZworks",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Marcelo Andrade R.",
+            "email": "marcelo.andrade.r@gmail.com"
+        }
+    ],
+    "scripts": {
+
+    },
+    "minimum-stability": "stable"
+}

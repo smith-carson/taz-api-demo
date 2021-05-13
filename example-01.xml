@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<BackgroundCheck userId="{{userId}}" password="{{password}}">
+    <BackgroundSearchPackage action='submit' type='1 General'>
+        <ReferenceId>123ABC</ReferenceId>
+        <PersonalData>
+            <PersonName>
+                <GivenName>Dwight</GivenName>
+                <MiddleName>Kurt</MiddleName>
+                <FamilyName>Schrute</FamilyName>
+                <Affix>III</Affix>
+            </PersonName>
+            <DemographicDetail>
+                <GovernmentId countryCode='US' issuingAuthority='SSN'>111-22-3333</GovernmentId>
+                <Gender>M</Gender>
+                <DateOfBirth>1974-01-20</DateOfBirth>
+            </DemographicDetail>
+            <PostalAddress>
+                <CountryCode>US</CountryCode>
+                <PostalCode>18505</PostalCode>
+                <Region>PA</Region>
+                <Municipality>Scranton</Municipality>
+                <DeliveryAddress>
+                    <AddressLine>1725 Slough Avenue</AddressLine>
+                </DeliveryAddress>
+            </PostalAddress>
+            <EmailAddress>test@noemail.com</EmailAddress>
+            <Telephone>717-555-0177</Telephone>
+        </PersonalData>
+        <Screenings>
+            <Screening type='personsearch'>
+                <Vendor>OMNI_ROUTING</Vendor>
+            </Screening>
+            <Screening type='ssn'>
+                <Vendor type='idsearchplus' high_risk_fraud_alert='yes'>transunion</Vendor>
+            </Screening>0x
+            <AdditionalItems type='x:integration_type'>
+                <Text>Integrating Platform Company Name</Text>
+            </AdditionalItems>
+        </Screenings>
+    </BackgroundSearchPackage>
+</BackgroundCheck>
