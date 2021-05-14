@@ -65,7 +65,7 @@ try {
     $endTime = microtime(true);
     $timeDiff = $endTime - $startTime;
 
-    echo 'Time to become ready' . $timeDiff, PHP_EOL;
+    echo PHP_EOL, PHP_EOL, 'Time to become ready' . $timeDiff, PHP_EOL;
 
 } catch (\GuzzleHttp\Exception\ClientException $e) {
     echo "ERROR:", PHP_EOL;
