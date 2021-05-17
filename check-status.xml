@@ -2,5 +2,13 @@
 <BackgroundCheck userId="{{userId}}" password="{{password}}">
     <BackgroundSearchPackage action="status">
         <OrderId>{{orderId}}</OrderId>
+        <Screenings useConfigurationDefaults="yes">
+            <AdditionalItems type="x:embed_credentials">
+                <Text>TRUE</Text>
+            </AdditionalItems>
+            <AdditionalItems type='x:return_xml_results'>
+                <Text>TRUE</Text>
+            </AdditionalItems>
+        </Screenings>
     </BackgroundSearchPackage>
 </BackgroundCheck>

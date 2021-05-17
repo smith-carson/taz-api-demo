@@ -23,7 +23,7 @@ $password = $_ENV['USER_PASSWORD'];
 $url = $_ENV['TAZ_URL'];
 
 // Prepare XML to send to TAZ works
-$xml = file_get_contents('example-02.xml');
+$xml = file_get_contents('example-03.xml');
 $xml = str_replace('{{userId}}', $userId, $xml);
 $xml = str_replace('{{password}}', $password, $xml);
 

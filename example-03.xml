@@ -26,12 +26,7 @@
             <EmailAddress>test@noemail.com</EmailAddress>
             <Telephone>717-555-0177</Telephone>
         </PersonalData>
-        <Screenings>
-            <Screening type='criminal' qualifier='county'/>
-            <Screening type='criminal' qualifier='national_alias'/>
-            <AdditionalItems type='x:integration_type'>
-                <Text>Integrating Platform Company Name</Text>
-            </AdditionalItems>
+        <Screenings useConfigurationDefaults="yes">
             <!-- Include credentials on report url -->
             <AdditionalItems type="x:embed_credentials">
                 <Text>TRUE</Text>
