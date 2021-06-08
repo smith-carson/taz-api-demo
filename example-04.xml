@@ -26,8 +26,7 @@
             <EmailAddress>test@noemail.com</EmailAddress>
             <Telephone>717-555-0177</Telephone>
         </PersonalData>
-        <Screenings>
-            <Screening type='criminal' qualifier='national_alias' />
+        <Screenings  useConfigurationDefaults='yes'>
             <!--Postback URL required for push results delivery -->
             <AdditionalItems type='x:postback_url'>
                 <Text>https://dundermifflin.webhook.net/custom/listener</Text>
