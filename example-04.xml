@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<BackgroundCheck userId="{{userId}}" password="{{password}}">
+    <BackgroundSearchPackage action='submit' type='ISE Criminal Package'>
+        <ReferenceId>123ABC</ReferenceId>
+        <PersonalData>
+            <PersonName>
+                <GivenName>Dwight</GivenName>
+                <MiddleName>Kurt</MiddleName>
+                <FamilyName>Schrute</FamilyName>
+                <Affix>III</Affix>
+            </PersonName>
+            <DemographicDetail>
+                <GovernmentId countryCode='US' issuingAuthority='SSN'>111-22-3333</GovernmentId>
+                <Gender>M</Gender>
+                <DateOfBirth>1974-01-20</DateOfBirth>
+            </DemographicDetail>
+            <PostalAddress>
+                <CountryCode>US</CountryCode>
+                <PostalCode>18505</PostalCode>
+                <Region>PA</Region>
+                <Municipality>Scranton</Municipality>
+                <DeliveryAddress>
+                    <AddressLine>1725 Slough Avenue</AddressLine>
+                </DeliveryAddress>
+            </PostalAddress>
+            <EmailAddress>test@noemail.com</EmailAddress>
+            <Telephone>717-555-0177</Telephone>
+        </PersonalData>
+        <Screenings>
+            <Screening type='criminal' qualifier='national_alias' />
+            <!--Postback URL required for push results delivery -->
+            <AdditionalItems type='x:postback_url'>
+                <Text>https://dundermifflin.webhook.net/custom/listener</Text>
+            </AdditionalItems>
+            <!--Request XML Search Results -->
+            <AdditionalItems type='x:return_xml_results'>
+                <Text>TRUE</Text>
+            </AdditionalItems>
+            <AdditionalItems type='x:integration_type'>
+                <Text>Integrating Platform Company Name</Text>
+            </AdditionalItems>
+            <!-- Include credentials on report url -->
+            <AdditionalItems type="x:embed_credentials">
+                <Text>TRUE</Text>
+            </AdditionalItems>
+        </Screenings>
+    </BackgroundSearchPackage>
+</BackgroundCheck>
