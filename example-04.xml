@@ -29,7 +29,7 @@
         <Screenings  useConfigurationDefaults='yes'>
             <!--Postback URL required for push results delivery -->
             <AdditionalItems type='x:postback_url'>
-                <Text>https://dundermifflin.webhook.net/custom/listener</Text>
+                <Text>https://6c37459539db.ngrok.io/</Text>
             </AdditionalItems>
             <!--Request XML Search Results -->
             <AdditionalItems type='x:return_xml_results'>
