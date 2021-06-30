@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <BackgroundCheck userId="{{userId}}" password="{{password}}">
-    <BackgroundSearchPackage action='submit' type='Student Exchange Criminal Package'>
+    <BackgroundSearchPackage action='submit' type='Student Exchange Criminal Search'>
         <ReferenceId>123ABC</ReferenceId>
         <PersonalData>
             <PersonName>
