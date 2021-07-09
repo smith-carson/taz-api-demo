@@ -4,13 +4,13 @@
         <ReferenceId>123ABC</ReferenceId>
         <PersonalData>
             <PersonName>
-                <GivenName>Dwight</GivenName>
-                <MiddleName>Kurt</MiddleName>
-                <FamilyName>Schrute</FamilyName>
+                <GivenName>Hang</GivenName>
+                <MiddleName></MiddleName>
+                <FamilyName>Mess</FamilyName>
                 <Affix>III</Affix>
             </PersonName>
             <DemographicDetail>
-                <GovernmentId countryCode='US' issuingAuthority='SSN'>111-22-3333</GovernmentId>
+                <GovernmentId countryCode='US' issuingAuthority='SSN'>333-22-1111</GovernmentId>
                 <Gender>M</Gender>
                 <DateOfBirth>1974-01-20</DateOfBirth>
             </DemographicDetail>
@@ -26,10 +26,12 @@
             <EmailAddress>test@noemail.com</EmailAddress>
             <Telephone>717-555-0177</Telephone>
         </PersonalData>
-        <Screenings  useConfigurationDefaults='yes'>
+        <Screenings>
+          <Screening type="criminal" qualifier="county" />
+          <Screening type="criminal" qualifier="national_alias" />
             <!--Postback URL required for push results delivery -->
             <AdditionalItems type='x:postback_url'>
-                <Text>https://56e60e5db784.ngrok.io/</Text>
+                <Text>https://78db0f57f9cd.ngrok.io/</Text>
             </AdditionalItems>
             <!--Request XML Search Results -->
             <AdditionalItems type='x:return_xml_results'>
